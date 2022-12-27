@@ -1,0 +1,23 @@
+{
+  "name": "news-search",
+  "version": "1.0.0",
+  "description": "News fetching app",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameyadev/news-search.git"
+  },
+  "author": "Ameya Gore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ameyadev/news-search/issues"
+  },
+  "homepage": "https://github.com/ameyadev/news-search",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3"
+  }
+}
