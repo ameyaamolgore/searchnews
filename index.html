@@ -53,7 +53,7 @@
         background: -webkit-linear-gradient(#fed501, #3701fe);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: animate 5s linear infinite;
+        animation: animate 5s linear infinite;;
       }
     
       @keyframes animate {
@@ -104,7 +104,7 @@ h1, h2 {
       });
     </script>
     
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fed501 !important; color: #3701fe !important; font-family: 'Inter', sans-serif; font-weight: 600;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7d942 !important; color: #3701fe !important; font-family: 'Inter', sans-serif; font-weight: 600;">
       <a class="navbar-brand" href="#" style="color: #3701fe !important;">News Article Search</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -166,11 +166,17 @@ h1, h2 {
 
     
     
-    <form id="search-form" >
+    <form id="search-form" onsubmit="return scrollDown()">
       <label for="search-input">Enter a search term:</label><br>
       <input type="text" id="search-input" name="search-input"><br>
       <button type="submit">Search</button>
     </form>
+    <script>
+      function scrollDown() {
+        document.body.scrollTop = 500; // scroll down 100 pixels
+        return false; // prevent the form from being submitted
+      }
+    </script>
     
     <style>
       form {
