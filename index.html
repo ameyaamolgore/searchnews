@@ -41,25 +41,9 @@
       @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
     </style>
-    <style>
-      .navbar {
-      position: sticky;
-      top: 0;
-      transition: opacity 1.0s;
-      }
-    </style>  
-    <script>
-      window.addEventListener('scroll', function() {
-        var navbar = document.querySelector('.navbar');
-        if (window.pageYOffset > 0) {
-          navbar.style.backgroundColor = 'rgba(254, 213, 1, 0.96)';
-        } else {
-          navbar.style.backgroundColor = 'blue';
-        }
-      });
-    </script>
     
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7d942 !important; color: #3701fe !important; font-family: 'Inter', sans-serif; font-weight: 600;">
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7d942 !important; color: #3701fe !important; font-family: 'Inter', sans-serif; font-weight: 600; position: sticky;">
       <a class="navbar-brand" href="#" style="color: #3701fe !important; margin-left: 30px;">News Article Search</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -74,9 +58,47 @@
           <a class="nav-item nav-link" href="https://blog.ameya.live" style="color: #3701fe !important;" target="_blank"><img src="/Hashnode.svg"></img>Hashnode</a>
         </div>
       </div>
+
+      <style>
+        .navbar {
+        position: sticky;
+        top: 0;
+        transition: opacity 1.0s;
+        }
+      </style>  
+      <script>
+        window.addEventListener('scroll', function() {
+          var navbar = document.querySelector('.navbar');
+          if (window.pageYOffset > 0) {
+            navbar.style.backgroundColor = 'rgba(254, 213, 1, 0.96)';
+          } else {
+            navbar.style.backgroundColor = 'darkyellow';
+          }
+        });
+      </script>
+        <style>
+      .navbar {
+      position: sticky;
+      top: 0;
+      transition: opacity 1.0s;
+      }
+    </style>  
+    <script>
+       window.addEventListener('scroll', function() {
+      var navbar = document.getElementById('navbar');
+      if (window.scrollY > navbar.offsetTop) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    });
+
+    </script>
       <style>
         .navbar {
           padding: 15px;
+          position: sticky;
+          z-index: 1;
         }
       </style>
     </nav>
