@@ -35,52 +35,7 @@
 
     </style>
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 header">
-          <img src="/logo.png" class="logo">
-          <div class="text-center">
-            <h1 style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 50px; color: #3701fe;">Ameya Gore</h1>
-            <h2 style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 20px; color: #3701fe;"> 16 y/o Tech Enthusiast</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <style>
-      h1 {
-        background: -webkit-linear-gradient(#fed501, #3701fe);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: animate 5s linear infinite;;
-      }
-    
-      @keyframes animate {
-        0% {
-          background-position: 0 0;
-        }
-        100% {
-          background-position: 100% 0;
-        }
-      }
-    </style>
-    <style>
-      .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.logo {
-  height: calc(100% - 2em); 
-}
-
-h1, h2 {
-  margin: 0;
-}
-
-    </style>
 
     <style>
       @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
@@ -105,7 +60,7 @@ h1, h2 {
     </script>
     
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7d942 !important; color: #3701fe !important; font-family: 'Inter', sans-serif; font-weight: 600;">
-      <a class="navbar-brand" href="#" style="color: #3701fe !important;">News Article Search</a>
+      <a class="navbar-brand" href="#" style="color: #3701fe !important; margin-left: 30px;">News Article Search</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -164,19 +119,65 @@ h1, h2 {
     </style>
 
 
-    
-    
-    <form id="search-form" onsubmit="return scrollDown()">
-      <label for="search-input">Enter a search term:</label><br>
-      <input type="text" id="search-input" name="search-input"><br>
-      <button type="submit">Search</button>
-    </form>
-    <script>
-      function scrollDown() {
-        document.body.scrollTop = 500; // scroll down 100 pixels
-        return false; // prevent the form from being submitted
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 header">
+          <img src="/logo.png" class="logo">
+          <div class="text-center">
+            <h1 style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 50px; color: #3701fe;">Ameya Gore</h1>
+            <h2 style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 20px; color: #3701fe;"> 16 y/o Tech Enthusiast</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      h1 {
+        background: -webkit-linear-gradient(#fed501, #3701fe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate 5s linear infinite;;
       }
-    </script>
+
+      @keyframes animate {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 100% 0;
+        }
+      }
+    </style>
+    <style>
+      .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .logo {
+    height: calc(100% - 2em); 
+    }
+
+    h1, h2 {
+    margin: 0;
+    }
+
+    </style>
+
+
+    
+    
+<form id="search-form">
+  <label for="search-input">Enter a search term:</label><br>
+  <input type="text" id="search-input" name="search-input"><br>
+  <button type="submit">Search</button>
+</form>
+
+
+
     
     <style>
       form {
@@ -301,6 +302,9 @@ h1, h2 {
             
             // update page with search results
             document.getElementById('results').innerHTML = output;
+            document.getElementById('results').innerHTML = output;
+            document.body.scrollTop = 550; // scroll up 500 pixels
+
           });
       });
     </script>
